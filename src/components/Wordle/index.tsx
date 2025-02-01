@@ -52,7 +52,8 @@ const Wordle: TWordle.Wordle = () => {
 
     return (
         <div>
-            <h1>Wordle Clone {TARGET_WORD}</h1>
+            <h1>Wordle Clone</h1>
+            <h1>{TARGET_WORD}</h1> {/* TODO remove after testing */} 
             {gameOver && <h2>{guesses.length === 5 && currentGuess.join("") !== TARGET_WORD ? "Game Over!" : "You Win!"}</h2>}
 
             <Guesses guesses={guesses} />
